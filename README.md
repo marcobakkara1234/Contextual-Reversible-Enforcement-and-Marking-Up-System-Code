@@ -6,7 +6,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-[![Paper Status](https://img.shields.io/badge/Paper-Under%20Review%20%7C%20IET%20ITS-orange)](mailto:tupabakara@gmail.com)
+[![Paper Status](https://img.shields.io/badge/Paper-Under%20Review%20%7C%20IET%20ITS-orange)](https://ietresearch.onlinelibrary.wiley.com/journal/17519578)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0004--0959--6450-brightgreen?logo=orcid)](https://orcid.org/0009-0004-0959-6450)
 
 ---
