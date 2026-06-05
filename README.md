@@ -36,6 +36,57 @@ VIOLATION DETECTED
 
 ---
 
+## ⚠️ Hardware Prerequisites
+
+**CREMS requires all physical hardware to be connected and verified before running `crems_system.py`.** The system will check for each component at startup and will refuse to proceed if any required device is missing or unreachable.
+
+### Required Hardware Checklist
+
+| # | Component | Interface | How to Verify |
+|---|---|---|---|
+| 1 | **Velodyne VLP-32C LiDAR** | ROS2 topic `/velodyne_points` | `ros2 topic echo /velodyne_points --once` |
+| 2 | **Visible + NIR + Thermal Camera Array** | RTSP stream | `ffprobe rtsp://smartpole-001/visible` |
+| 3 | **Pneumatic Sprayer + Solenoid Valve** | GPIO pin 24 (Raspberry Pi) | `gpio read 24` |
+| 4 | **2-Axis Servo Gimbal** | GPIO pins 18 & 23 (Raspberry Pi) | `gpio read 18 && gpio read 23` |
+| 5 | **Edge CPS Node** | GigE LAN (≤ 2 ms/hop) | `ping smartpole-001 -c 4` |
+| 6 | **CPC Reservoir** | Pressure sensor reading 15–55 bar | Verify via pneumatic controller panel |
+
+### Pre-flight Check Script
+
+Run this before starting the main system to confirm all hardware is online:
+
+```bash
+python crems_preflight.py
+```
+
+Expected output when all hardware is ready:
+
+```
+[OK] LiDAR      — VLP-32C responding on /velodyne_points (320,000 pts/s)
+[OK] Camera     — Visible stream online @ rtsp://smartpole-001/visible
+[OK] Camera     — Thermal stream online @ rtsp://smartpole-001/thermal
+[OK] GPIO 18    — Servo azimuth pin ready
+[OK] GPIO 23    — Servo elevation pin ready
+[OK] GPIO 24    — Solenoid valve pin ready
+[OK] Pressure   — CPC reservoir at 42 bar (within 15–55 bar range)
+[OK] Network    — Edge node latency 1.4 ms (within ≤ 2 ms requirement)
+
+✅ All systems nominal. Safe to run: python crems_system.py
+```
+
+If any check fails, the output will show:
+
+```
+[FAIL] LiDAR   — No data on /velodyne_points. Is the VLP-32C powered and connected?
+[FAIL] GPIO 24 — Pin unreadable. Is the Raspberry Pi GPIO interface enabled?
+
+❌ Hardware check failed. Do NOT run crems_system.py until all components are connected.
+```
+
+> **The system will not arm the actuation pipeline (Tier 2) unless all Tier 1 sensors report nominal status.** This is a hard safety interlock — not a software warning.
+
+---
+
 ## System Architecture
 
 ### Tier 1 — Sensing Layer
@@ -262,6 +313,15 @@ git clone https://github.com/marcobakkara1234/Contextual-Reversible-Enforcement-
 cd Contextual-Reversible-Enforcement-and-Marking-Up-System-Code
 
 pip install -r requirements.txt
+```
+
+> **Do not run `crems_system.py` directly.** Always run the pre-flight check first:
+
+```bash
+# Step 1 — verify all hardware is connected
+python crems_preflight.py
+
+# Step 2 — only if preflight passes, start the main system
 python crems_system.py
 ```
 
@@ -288,6 +348,7 @@ cryptography   # TLS 1.3 audit record transmission
 ```
 .
 ├── crems_system.py       # Full CREMS implementation (Tier 1–3)
+├── crems_preflight.py    # Hardware pre-flight check (run before crems_system.py)
 ├── crems_results.png     # Simulation output plots
 ├── requirements.txt      # Python dependencies
 ├── README.md             # This file
