@@ -2,7 +2,7 @@
 
 > **Cyber-Physical Enforcement at Smart Intersections: A Three-Tier LiDAR–Vision–Pneumatic Architecture for Reversible Chemical Marking of Pedestrian Right-of-Way Violations**
 >
-> Bakkara et al. (2026) · *IET Intelligent Transport Systems* (Under Review)
+> Bakkara et al. (2026) · *International Journal of Intelligent Transportation Systems Research* (Under Review)
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
@@ -377,13 +377,13 @@ cryptography   # TLS 1.3 audit record transmission
 ```bibtex
 @article{bakkara2026crems,
   title   = {Cyber-Physical Enforcement at Smart Intersections: A Three-Tier
-             LiDAR–Vision–Pneumatic Architecture for Reversible Chemical
+             LiDAR--Vision--Pneumatic Architecture for Reversible Chemical
              Marking of Pedestrian Right-of-Way Violations},
   author  = {Bakkara, Marco Julius Andreas and Hasibuan, Akmal Hasan and
              Simarmata, Fretyna Afesa and Umri, Queena Itsuka},
-  journal = {IET Intelligent Transport Systems},
+  journal = {International Journal of Intelligent Transportation Systems Research},
   year    = {2026},
-  note    = {Under Review}
+  note    = {Preprint, under review at Springer IJITSR}
 }
 ```
 
@@ -393,4 +393,4 @@ cryptography   # TLS 1.3 audit record transmission
 
 MIT License — see [LICENSE](LICENSE) for details.
 
-*This repository accompanies the above paper submitted to Springer Nature International Journal of Intelligent Transportation Systems Research.*
+*This repository accompanies the above paper submitted to the International Journal of Intelligent Transportation Systems Research (Springer).*
