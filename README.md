@@ -393,4 +393,4 @@ cryptography   # TLS 1.3 audit record transmission
 
 MIT License — see [LICENSE](LICENSE) for details.
 
-*This repository accompanies the above paper submitted to IET Intelligent Transport Systems.*
+*This repository accompanies the above paper submitted to Springer Nature International Journal of Intelligent Transportation Systems Research.*
