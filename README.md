@@ -6,7 +6,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-[![ORCID](https://img.shields.io/badge/ORCID-0009--0004--0959--6450-brightgreen?logo=orcid)](https://orcid.org/0009-0004-0959-6450)
+[![ORCID](https://img.shields.io/badge/ORCID-0009-0000-4573-5156-brightgreen?logo=orcid)](https://orcid.org/0009-0000-4573-5156)
 
 ---
 
@@ -363,7 +363,7 @@ cryptography   # TLS 1.3 audit record transmission
 |---|---|---|
 | **Marco Julius Andreas Bakkara** | Independent Researcher | Conceptualisation, system architecture, CIR-HMM, Pneumatic controller, servo routines, audit transmission, Multi-spectral camera system & CV integration |
 | Bram Frederick Samuel Sinambela | Universitas Sumatera Utara, Dept. Chemical | kinematics, materials, legal analysis |
-| Fretyna Afesa Simarmata | Politeknik Negeri Medan, Informatics Management | CIR algorithm & HMM software implementation |
+| Victor Chaste Nababan | Universitas Sumatera Utara, Dept. Computer Science and Informtion Techology | CIR algorithm & HMM software implementation |
 
 **Corresponding author:** Masherlina
 📧 masherlina01@gmail.com · ORCID: [0009-0000-2802-159X](https://orcid.org/0009-0000-2802-159X)
