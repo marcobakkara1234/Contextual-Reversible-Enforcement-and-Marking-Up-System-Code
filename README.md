@@ -6,7 +6,8 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-[![ORCID](https://shields.io)](https://orcid.org/0009-0000-4573-5156)
+[<img src="https://orcid.org" width="16" height="16" alt="ORCID iD icon"/> 0009-0000-4573-5156](https://orcid.org)
+
 
 ---
 
