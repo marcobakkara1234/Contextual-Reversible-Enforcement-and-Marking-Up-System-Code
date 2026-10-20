@@ -2,11 +2,10 @@
 
 > **Cyber-Physical Enforcement at Smart Intersections: A Three-Tier LiDAR–Vision–Pneumatic Architecture for Reversible Chemical Marking of Pedestrian Right-of-Way Violations**
 >
-> Bakkara et al. (2026) · *International Journal of Intelligent Transportation Systems Research* (Under Review)
+> Bakkara et al. (2026) 
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-[![Paper Status](https://img.shields.io/badge/Paper-Under%20Review%20%7C%20SN%20IJITSR-orange)](https://link.springer.com/journal/13177)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0004--0959--6450-brightgreen?logo=orcid)](https://orcid.org/0009-0004-0959-6450)
 
 ---
@@ -362,13 +361,12 @@ cryptography   # TLS 1.3 audit record transmission
 
 | Name | Affiliation | Role |
 |---|---|---|
-| **Marco Julius Andreas Bakkara** | Independent Researcher | Conceptualisation, system architecture, CIR-HMM, kinematics, materials, legal analysis |
-| Akmal Hasan Hasibuan | Universitas Padjajaran, Dept. Informatics Engineering | CIR algorithm & HMM software implementation |
-| Fretyna Afesa Simarmata | Politeknik Negeri Medan, Informatics Management | Pneumatic controller, servo routines, audit transmission |
-| Queena Itsuka Umri | Politeknik Negeri Medan, Multimedia Graphic Engineering | Multi-spectral camera system & CV integration |
+| **Marco Julius Andreas Bakkara** | Independent Researcher | Conceptualisation, system architecture, CIR-HMM, Pneumatic controller, servo routines, audit transmission, Multi-spectral camera system & CV integration |
+| Bram Frederick Samuel Sinambela | Universitas Sumatera Utara, Dept. Chemical | kinematics, materials, legal analysis |
+| Fretyna Afesa Simarmata | Politeknik Negeri Medan, Informatics Management | CIR algorithm & HMM software implementation |
 
-**Corresponding author:** Marco Julius Andreas Bakkara
-📧 tupabakara@gmail.com · ORCID: [0009-0004-0959-6450](https://orcid.org/0009-0004-0959-6450)
+**Corresponding author:** Masherlina
+📧 masherlina01@gmail.com · ORCID: [0009-0000-2802-159X](https://orcid.org/0009-0000-2802-159X)
 
 ---
 
@@ -379,11 +377,8 @@ cryptography   # TLS 1.3 audit record transmission
   title   = {Cyber-Physical Enforcement at Smart Intersections: A Three-Tier
              LiDAR--Vision--Pneumatic Architecture for Reversible Chemical
              Marking of Pedestrian Right-of-Way Violations},
-  author  = {Bakkara, Marco Julius Andreas and Hasibuan, Akmal Hasan and
-             Simarmata, Fretyna Afesa and Umri, Queena Itsuka},
-  journal = {International Journal of Intelligent Transportation Systems Research},
-  year    = {2026},
-  note    = {Preprint, under review at Springer IJITSR}
+  author  = {Bakkara, Marco Julius Andreas and Bram Frederick Samuel Sinambela and
+             Victor Chaste Nababan},
 }
 ```
 
